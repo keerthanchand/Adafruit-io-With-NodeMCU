@@ -8,8 +8,8 @@
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883                  
-#define AIO_USERNAME    "Arduino_kc"
-#define AIO_KEY         "022f64d4381c472ea9a4d14b91b5851f"
+#define AIO_USERNAME    "username"
+#define AIO_KEY         "auth_code"
 
 
 WiFiClient client;
@@ -77,20 +77,6 @@ void loop() {
         digitalWrite(fanpin, fanstate);
     }
   }
-
-  // Now we can publish stuff!
-  /*Serial.print(F("\nSending photocell val "));
-  Serial.print(x);
-  Serial.print("...");
-  if (! photocell.publish(x++)) {
-    Serial.println(F("Failed"));
-  } else {
-    Serial.println(F("OK!"));
-  }
-  if(! mqtt.ping()) {
-    mqtt.disconnect();
-  }
-  */
 }
 
 
